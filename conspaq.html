@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Venta</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/123aa5a318.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top-margin">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Iniciar sesión</a></li>
+                <li class="breadcrumb-item"><a href="../vendedor.html">Mi inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Consultar Paquetes</li>
+            </ol>
+        </nav>
+    </div>
+    
+    <h2><i class="fa-solid fa-plane-departure"></i> Consultar Paquetes</h2>
+    <div class="form-container">
+       
+        <div class="form-container">
+           
+            <form id="reporteForm">
+                <div class="form-group">
+                    <label for="fecha">Seleccione una fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="codigoPaquete">Código del Paquete:</label>
+                    <input type="text" id="codigoPaquete" name="codigoPaquete" required>
+                </div>
+                <button type="button" class="button" id="consultarPaquete"><i class="fa-solid fa-circle-question"></i>   Consultar Disponibilidad</button>
+            </form>
+            <div id="paqueteResultado" class="paquete-resultado"></div>
+        </div>
+    </div>
+    
+    <div class="bottom-margin"></div>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Venta</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/123aa5a318.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top-margin">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Iniciar sesión</a></li>
+                <li class="breadcrumb-item"><a href="../vendedor.html">Mi inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Registrar Venta</li>
+            </ol>
+            
+        </nav>
+        
+    </div>
+   
+    <h2><i class="fa-solid fa-dollar-sign"></i> Registrar Venta</h2>
+    <div class="form-container">
+        <h2>Formulario de Venta de Paquetes</h2>
+        <form id="ventaPaqueteForm">
+            <div class="form-group">
+                <label for="titular">Nombre y Apellido del Titular:</label>
+                <input type="text" id="titular" name="titular" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidadAcompanantes">Cantidad de Acompañantes:</label>
+                <select id="cantidadAcompanantes" name="cantidadAcompanantes" required>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div id="acompanantesContainer"></div>
+            <div class="form-group">
+                <label for="codigoPaquete">Código del Paquete:</label>
+                <input type="text" id="codigoPaquete" name="codigoPaquete" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaVenta">Fecha de Venta:</label>
+                <input type="date" id="fechaVenta" name="fechaVenta" required>
+            </div>
+            <button class="button" type="submit">Enviar</button>
+            <br>
+            <br>
+        </form>
+    </div>
+    
+    <div class="bottom-margin"></div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
